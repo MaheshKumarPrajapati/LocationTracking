@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Location Tracking</string>
+
+    <string name="google_maps_key">AIzaSyBmWs6JN6ZTK-SAfJizueNF-cvL1JZxWtY</string>
+    <string name="imagedes">imageDes</string>
+    <string name="your_location_list">Your Location List</string>
+    <string name="trip_id">\"Trip Id:- \"</string>
+    <string name="trip_start_time">\"Trip Start Time:- \"</string>
+    <string name="trip_end_time">\"Trip End Time:- \"</string>
+    <string name="loc_lat">\"Location Lat:- \"</string>
+    <string name="loc_long">\"Location Long:- \"</string>
+    <string name="loc_acc">\"Location Accuracy:- \"</string>
+    <string name="loc_time_stamp">\"Location TimeStamp:- \"</string>
+
+    <string name="err_cant_delete">You can\'t delete the data while tracker running!</string>
+    <string name="gps_disable">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="Yes">Yes</string>
+    <string name="internet_msg">No active internet connection found! Try again!</string>
+</resources>
+

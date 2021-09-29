@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_card_white"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvLLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Lat:- "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/tvLLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Long:- "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/tvLAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Accuracy:- "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/tvLTimeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location TimeStamp:- "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"/>
+
+
+    </LinearLayout>
+
+</layout>

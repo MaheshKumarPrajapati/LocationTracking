@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_splash"
+        android:id="@+id/root_content_splash"
+        android:background="@color/colorWhite">
+
+       <TextView
+           android:id="@+id/tvAppName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/app_name"
+           android:textSize="@dimen/_30sdp"
+           android:layout_centerInParent="true"
+           android:gravity="center"
+           android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_start"
+            android:layout_above="@+id/tvAppName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

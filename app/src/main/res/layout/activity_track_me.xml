@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.TrackMeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8">
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/add_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="@string/imagedes"
+                android:gravity="center"
+                android:inputType="textCapWords"
+                android:textSize="@dimen/_12sdp"
+                android:theme="@style/MyMaterialTheme"
+                app:backgroundTint="@color/colorPrimary"
+
+                app:icon="@drawable/ic_add"
+                app:iconSize="15dp"
+                app:iconTint="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/startFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorAccentGreen"
+                android:theme="@style/MyMaterialTheme"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/add_fab"
+                app:layout_constraintEnd_toEndOf="@+id/add_fab"
+                android:src="@drawable/ic_start" />
+
+
+            <TextView
+                android:id="@+id/tvStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Start"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/startFab"
+                app:layout_constraintEnd_toStartOf="@+id/startFab"
+                app:layout_constraintTop_toTopOf="@+id/startFab" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/stopFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorAccentGreen"
+                android:theme="@style/MyMaterialTheme"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/startFab"
+                app:layout_constraintEnd_toEndOf="@+id/startFab"
+                app:layout_constraintStart_toStartOf="@+id/startFab"
+                app:srcCompat="@drawable/ic_stop" />
+
+            <TextView
+                android:id="@+id/tvStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Stop"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/stopFab"
+                app:layout_constraintEnd_toStartOf="@+id/stopFab"
+                app:layout_constraintTop_toTopOf="@+id/stopFab" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/listFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorAccentGreen"
+                android:theme="@style/MyMaterialTheme"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toTopOf="@+id/stopFab"
+                app:layout_constraintEnd_toEndOf="@+id/stopFab"
+                app:layout_constraintStart_toStartOf="@+id/stopFab"
+                app:srcCompat="@drawable/ic_list" />
+
+            <TextView
+                android:id="@+id/tvList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Locations List"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/listFab"
+                app:layout_constraintEnd_toStartOf="@+id/listFab"
+                app:layout_constraintTop_toTopOf="@+id/listFab" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

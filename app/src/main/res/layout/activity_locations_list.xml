@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.LocationsListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/trip_header"
+            android:id="@+id/header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round_card_white"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            android:layout_margin="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+</layout>

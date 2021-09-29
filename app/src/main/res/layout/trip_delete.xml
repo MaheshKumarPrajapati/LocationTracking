@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_50sdp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Are you sure you want to delete trip data?"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvBtnDelete"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="1"
+                android:background="@drawable/round_card_pink"
+                android:gravity="center"
+                android:text="DELETE"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvBtnCancel"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="1"
+                android:background="@drawable/round_card_green"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
